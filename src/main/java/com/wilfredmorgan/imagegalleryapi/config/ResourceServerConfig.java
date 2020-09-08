@@ -71,6 +71,8 @@ public class ResourceServerConfig
                 .authenticated()
                 .antMatchers("/roles/**")
                 .hasAnyRole("ADMIN")
+                .antMatchers("/images/**")
+                .authenticated()
                 .and()
                 .exceptionHandling()
                 .accessDeniedHandler(new OAuth2AccessDeniedHandler());

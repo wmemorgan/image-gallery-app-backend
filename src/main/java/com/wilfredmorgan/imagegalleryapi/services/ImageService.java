@@ -20,7 +20,7 @@ public interface ImageService {
      * Returns the image with the given primary key
      *
      * @param id
-     * @return
+     * @return Image object with the given primary key or throws an exception if not found
      */
     Image findImageById(long id);
 

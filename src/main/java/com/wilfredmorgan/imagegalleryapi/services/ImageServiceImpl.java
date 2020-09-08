@@ -1,6 +1,5 @@
 package com.wilfredmorgan.imagegalleryapi.services;
 
-import com.wilfredmorgan.imagegalleryapi.exceptions.ResourceFoundException;
 import com.wilfredmorgan.imagegalleryapi.exceptions.ResourceNotFoundException;
 import com.wilfredmorgan.imagegalleryapi.handlers.HelpFunctions;
 import com.wilfredmorgan.imagegalleryapi.models.Image;
@@ -50,10 +49,19 @@ public class ImageServiceImpl implements ImageService {
 
     @Override
     public Image findImageById(long id) {
-        return imageRepository.findById(id)
-                .orElseThrow(() -> new ResourceFoundException(
-                        "Image id " + id + " not found"
-                ));
+        // Validate only user who saved the image or an admin can retrieve the image
+        Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
+        String username = authentication.getName();
+        User u = userService.findByUsername(username);
+        Image image = imageRepository.findById(id);
+        if (image == null) {
+            throw new ResourceNotFoundException("Image id " + id + " not found");
+        }
+        else if (u.getUserid() != image.getUser().getUserid()) {
+            throw new ResourceNotFoundException("Not authorized");
+        } else {
+            return image;
+        }
     }
 
     @Override
