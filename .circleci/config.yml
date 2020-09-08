@@ -1,9 +1,12 @@
 version: 2.1
 
-orbs:
-  maven: circleci/maven@0.0.12
+  orbs:
+    heroku: circleci/heroku@x.y # Use the Heroku orb in your config
 
-workflows:
-  maven_test:
-    jobs:
-      - maven/test # checkout, build, test, and upload test results
+  workflows:
+    heroku_deploy:
+      jobs:
+        - build
+        - heroku/deploy-via-git:
+            requires:
+              - build # only run deploy-via-git job if the build job has completed
