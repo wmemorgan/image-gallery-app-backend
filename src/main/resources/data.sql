@@ -1,6 +1,9 @@
 -- noinspection SqlNoDataSourceInspectionForFile
 -- noinspection SqlDialectInspectionForFile
 DELETE
+FROM images;
+
+DELETE
 FROM userroles;
 
 DELETE
