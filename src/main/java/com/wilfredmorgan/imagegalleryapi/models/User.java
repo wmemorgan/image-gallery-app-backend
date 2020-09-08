@@ -66,6 +66,15 @@ public class User extends Auditable {
     private Set<UserRoles> roles = new HashSet<>();
 
     /**
+     * Link to the Images table
+     */
+    @OneToMany(mappedBy = "user",
+        cascade = CascadeType.ALL,
+        orphanRemoval = true)
+    @JsonIgnoreProperties(value = "user", allowSetters = true)
+    private List<Image> images = new ArrayList<>();
+
+    /**
      * Default constructor required by JPA
      */
     public User() {
@@ -223,6 +232,24 @@ public class User extends Auditable {
      */
     public void setRoles(Set<UserRoles> roles) {
         this.roles = roles;
+    }
+
+    /**
+     * Getter for user images
+     *
+     * @return A list of users saved by the user
+     */
+    public List<Image> getImages() {
+        return images;
+    }
+
+    /**
+     * Setter for user images
+     *
+     * @param images Change the list of images associated with this user
+     */
+    public void setImages(List<Image> images) {
+        this.images = images;
     }
 
     @JsonIgnore
