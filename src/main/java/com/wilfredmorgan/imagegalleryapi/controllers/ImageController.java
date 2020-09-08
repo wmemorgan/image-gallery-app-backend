@@ -136,7 +136,21 @@ public class ImageController {
     public ResponseEntity<?> updateImage(@Valid @RequestBody Image updateImage,
                                          @PathVariable long imageid) {
         imageService.update(updateImage, imageid);
-        
+
+        return new ResponseEntity<>(HttpStatus.OK);
+    }
+
+    /**
+     * Deletes a given image
+     *
+     * @param imageid the primary key of the user you wish to delete
+     * @return Status of OK
+     * @see UserService#delete(long) UserService.delete(long)
+     */
+    @DeleteMapping(value = "/image/{imageid}", produces = {"application/json"})
+    public ResponseEntity<?> deleteImageById(@PathVariable long imageid) {
+        imageService.delete(imageid);
+
         return new ResponseEntity<>(HttpStatus.OK);
     }
 
