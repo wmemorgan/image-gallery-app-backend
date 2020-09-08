@@ -67,10 +67,10 @@ public class UserServiceImplTest {
     public void A_findAll() {
 
         List<User> testList = userService.findAll();
-        System.out.println("Expect: 4");
+        System.out.println("Expect: 5");
         System.out.println("Actual: " + testList.size());
 
-        assertEquals(4, testList.size());
+        assertEquals(5, testList.size());
     }
 
     @Test
@@ -182,10 +182,10 @@ public class UserServiceImplTest {
 
         List<User> testList = userService.findAll();
 
-        System.out.println("Expect: 3");
+        System.out.println("Expect: 4");
         System.out.println("Actual: " + testList.size());
 
-        assertEquals(3, testList.size());
+        assertEquals(4, testList.size());
 
     }
 
