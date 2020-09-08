@@ -92,6 +92,12 @@ public class UserController {
         return new ResponseEntity<>(u, HttpStatus.OK);
     }
 
+    /**
+     * Return user object of currently logged in user
+     *
+     * @param authentication
+     * @return
+     */
     @GetMapping(value = "/user/profile", produces = {"application/json"})
     public ResponseEntity<?> getUserProfile(Authentication authentication) {
         User u = userService.findByUsername(authentication.getName());
