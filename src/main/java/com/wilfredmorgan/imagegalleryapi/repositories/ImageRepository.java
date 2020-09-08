@@ -16,7 +16,15 @@ public interface ImageRepository extends CrudRepository<Image, Long> {
      * List all images saved by the specified user
      *
      * @param user
-     * @return
+     * @return list of image objects created by the specific user
      */
     List<Image> findImagesByUser(User user);
+
+    /**
+     * Returns the image with the given primary key
+     *
+     * @param id
+     * @return Image object with the given primary key
+     */
+    Image findById(long id);
 }
