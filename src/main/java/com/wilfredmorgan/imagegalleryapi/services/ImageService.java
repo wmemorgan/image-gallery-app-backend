@@ -27,10 +27,10 @@ public interface ImageService {
     /**
      * Returns a list of images from a specific user
      *
-     * @param userid
+     * @param username
      * @return
      */
-    List<Image> findImagesByUser(long userid);
+    List<Image> findImagesByUser(String username);
 
     /**
      * Given a complete image object, saves that image object in the database
