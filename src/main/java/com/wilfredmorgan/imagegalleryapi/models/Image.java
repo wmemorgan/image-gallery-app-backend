@@ -36,7 +36,7 @@ public class Image extends Auditable {
      * Link to the Users table
      */
     @ManyToOne
-    @JoinColumn(name = "imageid", nullable = false)
+    @JoinColumn(name = "userid", nullable = false)
     private User user;
 
     /**
