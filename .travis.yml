@@ -10,7 +10,7 @@ branches:
   - cicd
 deploy:
   provider: heroku
-  app: wme-rest-api-java
+  app: wme-rest-imagegalleryapi-java
   on:
     all_branches: true
   api_key:

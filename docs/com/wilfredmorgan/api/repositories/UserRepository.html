@@ -115,7 +115,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <!-- ======== START OF CLASS DATA ======== -->
 <main role="main">
 <div class="header">
-<div class="subTitle"><span class="packageLabelInType">Package</span>&nbsp;<a href="package-summary.html">com.wilfredmorgan.api.repositories</a></div>
+<div class="subTitle"><span class="packageLabelInType">Package</span>&nbsp;<a href="package-summary.html">com.wilfredmorgan.imagegalleryapi.repositories</a></div>
 <h2 title="Interface UserRepository" class="title">Interface UserRepository</h2>
 </div>
 <div class="contentContainer">
@@ -124,11 +124,11 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <li class="blockList">
 <dl>
 <dt>All Superinterfaces:</dt>
-<dd><code>org.springframework.data.repository.CrudRepository&lt;<a href="../models/User.html" title="class in com.wilfredmorgan.api.models">User</a>,&#8203;java.lang.Long&gt;</code>, <code>org.springframework.data.repository.Repository&lt;<a href="../models/User.html" title="class in com.wilfredmorgan.api.models">User</a>,&#8203;java.lang.Long&gt;</code></dd>
+<dd><code>org.springframework.data.repository.CrudRepository&lt;<a href="../models/User.html" title="class in com.wilfredmorgan.imagegalleryapi.models">User</a>,&#8203;java.lang.Long&gt;</code>, <code>org.springframework.data.repository.Repository&lt;<a href="../models/User.html" title="class in com.wilfredmorgan.imagegalleryapi.models">User</a>,&#8203;java.lang.Long&gt;</code></dd>
 </dl>
 <hr>
 <pre>public interface <span class="typeNameLabel">UserRepository</span>
-extends org.springframework.data.repository.CrudRepository&lt;<a href="../models/User.html" title="class in com.wilfredmorgan.api.models">User</a>,&#8203;java.lang.Long&gt;</pre>
+extends org.springframework.data.repository.CrudRepository&lt;<a href="../models/User.html" title="class in com.wilfredmorgan.imagegalleryapi.models">User</a>,&#8203;java.lang.Long&gt;</pre>
 <div class="block">CRUD repository connecting User model to the rest of the application</div>
 </li>
 </ul>
@@ -151,28 +151,28 @@ extends org.springframework.data.repository.CrudRepository&lt;<a href="../models
 <th class="colLast" scope="col">Description</th>
 </tr>
 <tr id="i0" class="altColor">
-<td class="colFirst"><code>java.util.List&lt;<a href="../models/User.html" title="class in com.wilfredmorgan.api.models">User</a>&gt;</code></td>
+<td class="colFirst"><code>java.util.List&lt;<a href="../models/User.html" title="class in com.wilfredmorgan.imagegalleryapi.models">User</a>&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#findByLastnameContainingIgnoreCase(java.lang.String)">findByLastnameContainingIgnoreCase</a></span>&#8203;(java.lang.String&nbsp;lastname)</code></th>
 <td class="colLast">
 <div class="block">Find all users whose last name contains a given case insensitive substring</div>
 </td>
 </tr>
 <tr id="i1" class="rowColor">
-<td class="colFirst"><code><a href="../models/User.html" title="class in com.wilfredmorgan.api.models">User</a></code></td>
+<td class="colFirst"><code><a href="../models/User.html" title="class in com.wilfredmorgan.imagegalleryapi.models">User</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#findByPrimaryemailIgnoreCase(java.lang.String)">findByPrimaryemailIgnoreCase</a></span>&#8203;(java.lang.String&nbsp;email)</code></th>
 <td class="colLast">
 <div class="block">Find a user by email address</div>
 </td>
 </tr>
 <tr id="i2" class="altColor">
-<td class="colFirst"><code>java.util.List&lt;<a href="../models/User.html" title="class in com.wilfredmorgan.api.models">User</a>&gt;</code></td>
+<td class="colFirst"><code>java.util.List&lt;<a href="../models/User.html" title="class in com.wilfredmorgan.imagegalleryapi.models">User</a>&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#findByUsernameContainingIgnoreCase(java.lang.String)">findByUsernameContainingIgnoreCase</a></span>&#8203;(java.lang.String&nbsp;username)</code></th>
 <td class="colLast">
 <div class="block">Find all users whose username contains a given case insensitive substring</div>
 </td>
 </tr>
 <tr id="i3" class="rowColor">
-<td class="colFirst"><code><a href="../models/User.html" title="class in com.wilfredmorgan.api.models">User</a></code></td>
+<td class="colFirst"><code><a href="../models/User.html" title="class in com.wilfredmorgan.imagegalleryapi.models">User</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#findByUsernameIgnoreCase(java.lang.String)">findByUsernameIgnoreCase</a></span>&#8203;(java.lang.String&nbsp;username)</code></th>
 <td class="colLast">
 <div class="block">Find a user by username</div>
@@ -208,7 +208,7 @@ extends org.springframework.data.repository.CrudRepository&lt;<a href="../models
 <ul class="blockList">
 <li class="blockList">
 <h4>findByUsernameIgnoreCase</h4>
-<pre class="methodSignature"><a href="../models/User.html" title="class in com.wilfredmorgan.api.models">User</a>&nbsp;findByUsernameIgnoreCase&#8203;(java.lang.String&nbsp;username)</pre>
+<pre class="methodSignature"><a href="../models/User.html" title="class in com.wilfredmorgan.imagegalleryapi.models">User</a>&nbsp;findByUsernameIgnoreCase&#8203;(java.lang.String&nbsp;username)</pre>
 <div class="block">Find a user by username</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
@@ -224,7 +224,7 @@ extends org.springframework.data.repository.CrudRepository&lt;<a href="../models
 <ul class="blockList">
 <li class="blockList">
 <h4>findByPrimaryemailIgnoreCase</h4>
-<pre class="methodSignature"><a href="../models/User.html" title="class in com.wilfredmorgan.api.models">User</a>&nbsp;findByPrimaryemailIgnoreCase&#8203;(java.lang.String&nbsp;email)</pre>
+<pre class="methodSignature"><a href="../models/User.html" title="class in com.wilfredmorgan.imagegalleryapi.models">User</a>&nbsp;findByPrimaryemailIgnoreCase&#8203;(java.lang.String&nbsp;email)</pre>
 <div class="block">Find a user by email address</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
@@ -240,7 +240,7 @@ extends org.springframework.data.repository.CrudRepository&lt;<a href="../models
 <ul class="blockList">
 <li class="blockList">
 <h4>findByUsernameContainingIgnoreCase</h4>
-<pre class="methodSignature">java.util.List&lt;<a href="../models/User.html" title="class in com.wilfredmorgan.api.models">User</a>&gt;&nbsp;findByUsernameContainingIgnoreCase&#8203;(java.lang.String&nbsp;username)</pre>
+<pre class="methodSignature">java.util.List&lt;<a href="../models/User.html" title="class in com.wilfredmorgan.imagegalleryapi.models">User</a>&gt;&nbsp;findByUsernameContainingIgnoreCase&#8203;(java.lang.String&nbsp;username)</pre>
 <div class="block">Find all users whose username contains a given case insensitive substring</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
@@ -256,7 +256,7 @@ extends org.springframework.data.repository.CrudRepository&lt;<a href="../models
 <ul class="blockListLast">
 <li class="blockList">
 <h4>findByLastnameContainingIgnoreCase</h4>
-<pre class="methodSignature">java.util.List&lt;<a href="../models/User.html" title="class in com.wilfredmorgan.api.models">User</a>&gt;&nbsp;findByLastnameContainingIgnoreCase&#8203;(java.lang.String&nbsp;lastname)</pre>
+<pre class="methodSignature">java.util.List&lt;<a href="../models/User.html" title="class in com.wilfredmorgan.imagegalleryapi.models">User</a>&gt;&nbsp;findByLastnameContainingIgnoreCase&#8203;(java.lang.String&nbsp;lastname)</pre>
 <div class="block">Find all users whose last name contains a given case insensitive substring</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>

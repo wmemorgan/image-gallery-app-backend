@@ -115,7 +115,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <!-- ======== START OF CLASS DATA ======== -->
 <main role="main">
 <div class="header">
-<div class="subTitle"><span class="packageLabelInType">Package</span>&nbsp;<a href="package-summary.html">com.wilfredmorgan.api.services</a></div>
+<div class="subTitle"><span class="packageLabelInType">Package</span>&nbsp;<a href="package-summary.html">com.wilfredmorgan.imagegalleryapi.services</a></div>
 <h2 title="Class RoleServiceImpl" class="title">Class RoleServiceImpl</h2>
 </div>
 <div class="contentContainer">
@@ -123,7 +123,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <li>java.lang.Object</li>
 <li>
 <ul class="inheritance">
-<li>com.wilfredmorgan.api.services.RoleServiceImpl</li>
+<li>com.wilfredmorgan.imagegalleryapi.services.RoleServiceImpl</li>
 </ul>
 </li>
 </ul>
@@ -132,14 +132,14 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <li class="blockList">
 <dl>
 <dt>All Implemented Interfaces:</dt>
-<dd><code><a href="RoleService.html" title="interface in com.wilfredmorgan.api.services">RoleService</a></code></dd>
+<dd><code><a href="RoleService.html" title="interface in com.wilfredmorgan.imagegalleryapi.services">RoleService</a></code></dd>
 </dl>
 <hr>
 <pre>@Transactional
 @Service("roleService")
 public class <span class="typeNameLabel">RoleServiceImpl</span>
 extends java.lang.Object
-implements <a href="RoleService.html" title="interface in com.wilfredmorgan.api.services">RoleService</a></pre>
+implements <a href="RoleService.html" title="interface in com.wilfredmorgan.imagegalleryapi.services">RoleService</a></pre>
 <div class="block">Implements the RoleService interface</div>
 </li>
 </ul>
@@ -197,29 +197,29 @@ implements <a href="RoleService.html" title="interface in com.wilfredmorgan.api.
 </td>
 </tr>
 <tr id="i2" class="altColor">
-<td class="colFirst"><code>java.util.List&lt;<a href="../models/Role.html" title="class in com.wilfredmorgan.api.models">Role</a>&gt;</code></td>
+<td class="colFirst"><code>java.util.List&lt;<a href="../models/Role.html" title="class in com.wilfredmorgan.imagegalleryapi.models">Role</a>&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#findAll()">findAll</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Returns a list of all the roles</div>
 </td>
 </tr>
 <tr id="i3" class="rowColor">
-<td class="colFirst"><code><a href="../models/Role.html" title="class in com.wilfredmorgan.api.models">Role</a></code></td>
+<td class="colFirst"><code><a href="../models/Role.html" title="class in com.wilfredmorgan.imagegalleryapi.models">Role</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#findRoleById(long)">findRoleById</a></span>&#8203;(long&nbsp;id)</code></th>
 <td class="colLast">
 <div class="block">Returns the role with the given primary key</div>
 </td>
 </tr>
 <tr id="i4" class="altColor">
-<td class="colFirst"><code><a href="../models/Role.html" title="class in com.wilfredmorgan.api.models">Role</a></code></td>
+<td class="colFirst"><code><a href="../models/Role.html" title="class in com.wilfredmorgan.imagegalleryapi.models">Role</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#findRoleByName(java.lang.String)">findRoleByName</a></span>&#8203;(java.lang.String&nbsp;name)</code></th>
 <td class="colLast">
 <div class="block">Returns the role with the given name</div>
 </td>
 </tr>
 <tr id="i5" class="rowColor">
-<td class="colFirst"><code><a href="../models/Role.html" title="class in com.wilfredmorgan.api.models">Role</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#save(com.wilfredmorgan.api.models.Role)">save</a></span>&#8203;(<a href="../models/Role.html" title="class in com.wilfredmorgan.api.models">Role</a>&nbsp;role)</code></th>
+<td class="colFirst"><code><a href="../models/Role.html" title="class in com.wilfredmorgan.imagegalleryapi.models">Role</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#save(com.wilfredmorgan.api.models.Role)">save</a></span>&#8203;(<a href="../models/Role.html" title="class in com.wilfredmorgan.imagegalleryapi.models">Role</a>&nbsp;role)</code></th>
 <td class="colLast">
 <div class="block">Given a complete role object, saves that role object in the database
  If a primary key is provided, the record is completely replaced
@@ -227,8 +227,8 @@ implements <a href="RoleService.html" title="interface in com.wilfredmorgan.api.
 </td>
 </tr>
 <tr id="i6" class="altColor">
-<td class="colFirst"><code><a href="../models/Role.html" title="class in com.wilfredmorgan.api.models">Role</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#update(com.wilfredmorgan.api.models.Role,long)">update</a></span>&#8203;(<a href="../models/Role.html" title="class in com.wilfredmorgan.api.models">Role</a>&nbsp;role,
+<td class="colFirst"><code><a href="../models/Role.html" title="class in com.wilfredmorgan.imagegalleryapi.models">Role</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#update(com.wilfredmorgan.api.models.Role,long)">update</a></span>&#8203;(<a href="../models/Role.html" title="class in com.wilfredmorgan.imagegalleryapi.models">Role</a>&nbsp;role,
       long&nbsp;id)</code></th>
 <td class="colLast">
 <div class="block">Updates the provided fields in the role record referenced by the primary key</div>
@@ -283,12 +283,12 @@ implements <a href="RoleService.html" title="interface in com.wilfredmorgan.api.
 <ul class="blockList">
 <li class="blockList">
 <h4>findAll</h4>
-<pre class="methodSignature">public&nbsp;java.util.List&lt;<a href="../models/Role.html" title="class in com.wilfredmorgan.api.models">Role</a>&gt;&nbsp;findAll()</pre>
+<pre class="methodSignature">public&nbsp;java.util.List&lt;<a href="../models/Role.html" title="class in com.wilfredmorgan.imagegalleryapi.models">Role</a>&gt;&nbsp;findAll()</pre>
 <div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="RoleService.html#findAll()">RoleService</a></code></span></div>
 <div class="block">Returns a list of all the roles</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="RoleService.html#findAll()">findAll</a></code>&nbsp;in interface&nbsp;<code><a href="RoleService.html" title="interface in com.wilfredmorgan.api.services">RoleService</a></code></dd>
+<dd><code><a href="RoleService.html#findAll()">findAll</a></code>&nbsp;in interface&nbsp;<code><a href="RoleService.html" title="interface in com.wilfredmorgan.imagegalleryapi.services">RoleService</a></code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>List of roles</dd>
 </dl>
@@ -300,12 +300,12 @@ implements <a href="RoleService.html" title="interface in com.wilfredmorgan.api.
 <ul class="blockList">
 <li class="blockList">
 <h4>findRoleById</h4>
-<pre class="methodSignature">public&nbsp;<a href="../models/Role.html" title="class in com.wilfredmorgan.api.models">Role</a>&nbsp;findRoleById&#8203;(long&nbsp;id)</pre>
+<pre class="methodSignature">public&nbsp;<a href="../models/Role.html" title="class in com.wilfredmorgan.imagegalleryapi.models">Role</a>&nbsp;findRoleById&#8203;(long&nbsp;id)</pre>
 <div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="RoleService.html#findRoleById(long)">RoleService</a></code></span></div>
 <div class="block">Returns the role with the given primary key</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="RoleService.html#findRoleById(long)">findRoleById</a></code>&nbsp;in interface&nbsp;<code><a href="RoleService.html" title="interface in com.wilfredmorgan.api.services">RoleService</a></code></dd>
+<dd><code><a href="RoleService.html#findRoleById(long)">findRoleById</a></code>&nbsp;in interface&nbsp;<code><a href="RoleService.html" title="interface in com.wilfredmorgan.imagegalleryapi.services">RoleService</a></code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>Role object with the given primarry key or throws an exception if not found</dd>
 </dl>
@@ -317,12 +317,12 @@ implements <a href="RoleService.html" title="interface in com.wilfredmorgan.api.
 <ul class="blockList">
 <li class="blockList">
 <h4>findRoleByName</h4>
-<pre class="methodSignature">public&nbsp;<a href="../models/Role.html" title="class in com.wilfredmorgan.api.models">Role</a>&nbsp;findRoleByName&#8203;(java.lang.String&nbsp;name)</pre>
+<pre class="methodSignature">public&nbsp;<a href="../models/Role.html" title="class in com.wilfredmorgan.imagegalleryapi.models">Role</a>&nbsp;findRoleByName&#8203;(java.lang.String&nbsp;name)</pre>
 <div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="RoleService.html#findRoleByName(java.lang.String)">RoleService</a></code></span></div>
 <div class="block">Returns the role with the given name</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="RoleService.html#findRoleByName(java.lang.String)">findRoleByName</a></code>&nbsp;in interface&nbsp;<code><a href="RoleService.html" title="interface in com.wilfredmorgan.api.services">RoleService</a></code></dd>
+<dd><code><a href="RoleService.html#findRoleByName(java.lang.String)">findRoleByName</a></code>&nbsp;in interface&nbsp;<code><a href="RoleService.html" title="interface in com.wilfredmorgan.imagegalleryapi.services">RoleService</a></code></dd>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>name</code> - The name (String) of the role you seek</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
@@ -337,14 +337,14 @@ implements <a href="RoleService.html" title="interface in com.wilfredmorgan.api.
 <li class="blockList">
 <h4>save</h4>
 <pre class="methodSignature">@Transactional
-public&nbsp;<a href="../models/Role.html" title="class in com.wilfredmorgan.api.models">Role</a>&nbsp;save&#8203;(<a href="../models/Role.html" title="class in com.wilfredmorgan.api.models">Role</a>&nbsp;role)</pre>
+public&nbsp;<a href="../models/Role.html" title="class in com.wilfredmorgan.imagegalleryapi.models">Role</a>&nbsp;save&#8203;(<a href="../models/Role.html" title="class in com.wilfredmorgan.imagegalleryapi.models">Role</a>&nbsp;role)</pre>
 <div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="RoleService.html#save(com.wilfredmorgan.api.models.Role)">RoleService</a></code></span></div>
 <div class="block">Given a complete role object, saves that role object in the database
  If a primary key is provided, the record is completely replaced
  If no primary key is provided, one is automatically generated and the record is added to the database</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="RoleService.html#save(com.wilfredmorgan.api.models.Role)">save</a></code>&nbsp;in interface&nbsp;<code><a href="RoleService.html" title="interface in com.wilfredmorgan.api.services">RoleService</a></code></dd>
+<dd><code><a href="RoleService.html#save(com.wilfredmorgan.api.models.Role)">save</a></code>&nbsp;in interface&nbsp;<code><a href="RoleService.html" title="interface in com.wilfredmorgan.imagegalleryapi.services">RoleService</a></code></dd>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>role</code> - The role object (Role) to be saved</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
@@ -359,13 +359,13 @@ public&nbsp;<a href="../models/Role.html" title="class in com.wilfredmorgan.api.
 <li class="blockList">
 <h4>update</h4>
 <pre class="methodSignature">@Transactional
-public&nbsp;<a href="../models/Role.html" title="class in com.wilfredmorgan.api.models">Role</a>&nbsp;update&#8203;(<a href="../models/Role.html" title="class in com.wilfredmorgan.api.models">Role</a>&nbsp;role,
+public&nbsp;<a href="../models/Role.html" title="class in com.wilfredmorgan.imagegalleryapi.models">Role</a>&nbsp;update&#8203;(<a href="../models/Role.html" title="class in com.wilfredmorgan.imagegalleryapi.models">Role</a>&nbsp;role,
                    long&nbsp;id)</pre>
 <div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="RoleService.html#update(com.wilfredmorgan.api.models.Role,long)">RoleService</a></code></span></div>
 <div class="block">Updates the provided fields in the role record referenced by the primary key</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="RoleService.html#update(com.wilfredmorgan.api.models.Role,long)">update</a></code>&nbsp;in interface&nbsp;<code><a href="RoleService.html" title="interface in com.wilfredmorgan.api.services">RoleService</a></code></dd>
+<dd><code><a href="RoleService.html#update(com.wilfredmorgan.api.models.Role,long)">update</a></code>&nbsp;in interface&nbsp;<code><a href="RoleService.html" title="interface in com.wilfredmorgan.imagegalleryapi.services">RoleService</a></code></dd>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>role</code> - Only the role fields to be updated</dd>
 <dd><code>id</code> - The primary key (long) of the user to be updated</dd>
@@ -386,7 +386,7 @@ public&nbsp;void&nbsp;delete&#8203;(long&nbsp;id)</pre>
 <div class="block">Deletes the role record based off the provided primary key</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="RoleService.html#delete(long)">delete</a></code>&nbsp;in interface&nbsp;<code><a href="RoleService.html" title="interface in com.wilfredmorgan.api.services">RoleService</a></code></dd>
+<dd><code><a href="RoleService.html#delete(long)">delete</a></code>&nbsp;in interface&nbsp;<code><a href="RoleService.html" title="interface in com.wilfredmorgan.imagegalleryapi.services">RoleService</a></code></dd>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>id</code> - The primary key (long) of the role to be deleted</dd>
 </dl>
@@ -404,7 +404,7 @@ public&nbsp;void&nbsp;deleteAll()</pre>
 <div class="block">Deletes all records and their associated records from the database</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="RoleService.html#deleteAll()">deleteAll</a></code>&nbsp;in interface&nbsp;<code><a href="RoleService.html" title="interface in com.wilfredmorgan.api.services">RoleService</a></code></dd>
+<dd><code><a href="RoleService.html#deleteAll()">deleteAll</a></code>&nbsp;in interface&nbsp;<code><a href="RoleService.html" title="interface in com.wilfredmorgan.imagegalleryapi.services">RoleService</a></code></dd>
 </dl>
 </li>
 </ul>

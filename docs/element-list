@@ -1,8 +1,8 @@
-com.wilfredmorgan.api
-com.wilfredmorgan.api.config
-com.wilfredmorgan.api.controllers
-com.wilfredmorgan.api.exceptions
-com.wilfredmorgan.api.handlers
-com.wilfredmorgan.api.models
-com.wilfredmorgan.api.repositories
-com.wilfredmorgan.api.services
+com.wilfredmorgan.imagegalleryapi
+com.wilfredmorgan.imagegalleryapi.config
+com.wilfredmorgan.imagegalleryapi.controllers
+com.wilfredmorgan.imagegalleryapi.exceptions
+com.wilfredmorgan.imagegalleryapi.handlers
+com.wilfredmorgan.imagegalleryapi.models
+com.wilfredmorgan.imagegalleryapi.repositories
+com.wilfredmorgan.imagegalleryapi.services

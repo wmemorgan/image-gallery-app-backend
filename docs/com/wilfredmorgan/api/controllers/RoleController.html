@@ -115,7 +115,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <!-- ======== START OF CLASS DATA ======== -->
 <main role="main">
 <div class="header">
-<div class="subTitle"><span class="packageLabelInType">Package</span>&nbsp;<a href="package-summary.html">com.wilfredmorgan.api.controllers</a></div>
+<div class="subTitle"><span class="packageLabelInType">Package</span>&nbsp;<a href="package-summary.html">com.wilfredmorgan.imagegalleryapi.controllers</a></div>
 <h2 title="Class RoleController" class="title">Class RoleController</h2>
 </div>
 <div class="contentContainer">
@@ -123,7 +123,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <li>java.lang.Object</li>
 <li>
 <ul class="inheritance">
-<li>com.wilfredmorgan.api.controllers.RoleController</li>
+<li>com.wilfredmorgan.imagegalleryapi.controllers.RoleController</li>
 </ul>
 </li>
 </ul>
@@ -179,7 +179,7 @@ extends java.lang.Object</pre>
 </tr>
 <tr id="i0" class="altColor">
 <td class="colFirst"><code>org.springframework.http.ResponseEntity&lt;?&gt;</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#addNewRole(com.wilfredmorgan.api.models.Role)">addNewRole</a></span>&#8203;(@Valid <a href="../models/Role.html" title="class in com.wilfredmorgan.api.models">Role</a>&nbsp;newRole)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#addNewRole(com.wilfredmorgan.api.models.Role)">addNewRole</a></span>&#8203;(@Valid <a href="../models/Role.html" title="class in com.wilfredmorgan.imagegalleryapi.models">Role</a>&nbsp;newRole)</code></th>
 <td class="colLast">
 <div class="block">Given a complete Role object, create a new Role record
  <br>Example: <a href="http://localhost:2019/roles/role">http://localhost:2019/roles/role</a></div>
@@ -219,7 +219,7 @@ extends java.lang.Object</pre>
 </tr>
 <tr id="i5" class="rowColor">
 <td class="colFirst"><code>org.springframework.http.ResponseEntity&lt;?&gt;</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#updateRole(com.wilfredmorgan.api.models.Role,long)">updateRole</a></span>&#8203;(@Valid <a href="../models/Role.html" title="class in com.wilfredmorgan.api.models">Role</a>&nbsp;updateRole,
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#updateRole(com.wilfredmorgan.api.models.Role,long)">updateRole</a></span>&#8203;(@Valid <a href="../models/Role.html" title="class in com.wilfredmorgan.imagegalleryapi.models">Role</a>&nbsp;updateRole,
           long&nbsp;roleid)</code></th>
 <td class="colLast">
 <div class="block">The process allows you to update a role name only!
@@ -341,7 +341,7 @@ public&nbsp;org.springframework.http.ResponseEntity&lt;?&gt;&nbsp;getRoleByName&
 <pre class="methodSignature">@PostMapping(value="/role",
              consumes="application/json")
 public&nbsp;org.springframework.http.ResponseEntity&lt;?&gt;&nbsp;addNewRole&#8203;(@Valid @RequestBody
-                                                             @Valid <a href="../models/Role.html" title="class in com.wilfredmorgan.api.models">Role</a>&nbsp;newRole)</pre>
+                                                             @Valid <a href="../models/Role.html" title="class in com.wilfredmorgan.imagegalleryapi.models">Role</a>&nbsp;newRole)</pre>
 <div class="block">Given a complete Role object, create a new Role record
  <br>Example: <a href="http://localhost:2019/roles/role">http://localhost:2019/roles/role</a></div>
 <dl>
@@ -363,7 +363,7 @@ public&nbsp;org.springframework.http.ResponseEntity&lt;?&gt;&nbsp;addNewRole&#82
 <pre class="methodSignature">@PutMapping(value="/role/{roleid}",
             consumes="application/json")
 public&nbsp;org.springframework.http.ResponseEntity&lt;?&gt;&nbsp;updateRole&#8203;(@Valid @RequestBody
-                                                             @Valid <a href="../models/Role.html" title="class in com.wilfredmorgan.api.models">Role</a>&nbsp;updateRole,
+                                                             @Valid <a href="../models/Role.html" title="class in com.wilfredmorgan.imagegalleryapi.models">Role</a>&nbsp;updateRole,
                                                              @PathVariable
                                                              long&nbsp;roleid)</pre>
 <div class="block">The process allows you to update a role name only!
