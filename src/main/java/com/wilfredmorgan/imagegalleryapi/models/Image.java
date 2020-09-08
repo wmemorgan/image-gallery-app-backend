@@ -1,5 +1,7 @@
 package com.wilfredmorgan.imagegalleryapi.models;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+
 import javax.persistence.*;
 
 /**
@@ -37,6 +39,7 @@ public class Image extends Auditable {
      */
     @ManyToOne
     @JoinColumn(name = "userid", nullable = false)
+    @JsonIgnoreProperties(value = "images", allowSetters = true)
     private User user;
 
     /**
