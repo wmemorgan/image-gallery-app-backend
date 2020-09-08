@@ -7,6 +7,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.security.core.Authentication;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
@@ -42,6 +43,7 @@ public class ImageController {
      * @return JSON list of all images with a status of OK
      * @see ImageService#findAll() ImageService.findAll()
      */
+    @PreAuthorize("hasAnyRole('ADMIN')")
     @GetMapping(value = "/", produces = {"application/json"})
     public ResponseEntity<?> getAllImages() {
         List<Image> images = imageService.findAll();
