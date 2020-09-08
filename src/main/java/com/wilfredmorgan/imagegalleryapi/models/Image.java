@@ -46,4 +46,44 @@ public class Image extends Auditable {
         this.thumbnailurl = thumbnailurl;
         this.user = user;
     }
+
+    public long getImageid() {
+        return imageid;
+    }
+
+    public void setImageid(long imageid) {
+        this.imageid = imageid;
+    }
+
+    public String getImageurl() {
+        return imageurl;
+    }
+
+    public void setImageurl(String imageurl) {
+        this.imageurl = imageurl;
+    }
+
+    public String getDescription() {
+        return description;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
+    }
+
+    public String getThumbnailurl() {
+        return thumbnailurl;
+    }
+
+    public void setThumbnailurl(String thumbnailurl) {
+        this.thumbnailurl = thumbnailurl;
+    }
+
+    public User getUser() {
+        return user;
+    }
+
+    public void setUser(User user) {
+        this.user = user;
+    }
 }
