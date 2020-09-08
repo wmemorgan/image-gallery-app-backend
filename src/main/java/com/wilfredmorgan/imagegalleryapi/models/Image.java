@@ -36,5 +36,14 @@ public class Image extends Auditable {
     @JoinColumn(name = "userid", nullable = false)
     private User user;
 
+    public Image() {
+    }
 
+    public Image(long imageid, String imageurl, String description, String thumbnailurl, User user) {
+        this.imageid = imageid;
+        this.imageurl = imageurl;
+        this.description = description;
+        this.thumbnailurl = thumbnailurl;
+        this.user = user;
+    }
 }
