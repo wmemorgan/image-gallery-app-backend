@@ -92,6 +92,12 @@ public class UserController {
         return new ResponseEntity<>(u, HttpStatus.OK);
     }
 
+    /**
+     * Return user object of currently logged in user
+     *
+     * @param authentication
+     * @return
+     */
     @GetMapping(value = "/user/profile", produces = {"application/json"})
     public ResponseEntity<?> getUserProfile(Authentication authentication) {
         User u = userService.findByUsername(authentication.getName());
@@ -172,7 +178,7 @@ public class UserController {
      * @return status of OK
      * @see UserService#save(User) UserService.save(User)
      */
-    @PutMapping(value = "/user/{userid}", consumes = "application/json")
+    @PutMapping(value = "/user/{userid}", consumes = {"application/json"})
     public ResponseEntity<?> replaceUser(@Valid @RequestBody User replaceUser,
                                          @PathVariable long userid) {
 
@@ -188,7 +194,7 @@ public class UserController {
      * <br> Example: <a href="http://localhost:2019/users/user/7">http://localhost:2019/users/user/7</a>
      *
      * @param updateUser An object containing values for just the fields that are being updated. All other fields are left NULL.
-     * @param id         The primary key of the user you wish to update.
+     * @param id The primary key of the user you wish to update.
      * @return A status of OK
      * @see UserService#update(User, long) UserService.update(User, long)
      */

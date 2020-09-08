@@ -57,8 +57,8 @@ public class ImageServiceImpl implements ImageService {
     }
 
     @Override
-    public List<Image> findImagesByUser(long userid) {
-        User u = userService.findById(userid);
+    public List<Image> findImagesByUser(String username) {
+        User u = userService.findByUsername(username);
 
         List<Image> list = new ArrayList<>();
 
