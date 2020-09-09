@@ -9,8 +9,8 @@ REST API which manages the Image Gallery App backend
 ## Application Arichtecture
 The Image Gallery App is made up of 3 modular components:
 
-- [**Image Gallery Backend**](#image-gallery-api): api which manages user security and image library
 - [**Image Search Engine**](https://github.com/wmemorgan/image-search-api-v2): custom search api which uses the Google Search Engine to query images
+- [**Image Gallery Backend**](https://github.com/wmemorgan/image-gallery-app-backend)): api which manages user security and image library
 - [**Image Gallery Client**](https://github.com/wmemorgan/image-gallery-app-frontend): frontend which performs user registration, image searches, and library updates
 
 ## Demo Client Site
