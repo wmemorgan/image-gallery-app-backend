@@ -15,6 +15,7 @@ The Image Gallery App is made up of 3 modular components:
 
 ## Demo Client Site
 - [Image Gallery Frontend](https://wme-image-gallery.netlify.app/)
+- [Source Code](https://github.com/wmemorgan/image-gallery-app-frontend)
 
 ## Installation
 - Clone this repo to your local machine using `https://github.com/wmemorgan/image-gallery-app-backend.git`
